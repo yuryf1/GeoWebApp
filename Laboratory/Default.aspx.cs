@@ -30,19 +30,13 @@ namespace Laboratory
             table.CreateIfNotExists();                                    // Создание таблицы
 
             WebClient wc = new WebClient();
-            //var openweathermap = wc.DownloadString("http://api.openweathermap.org/data/2.5/weather?lat=56.000&lon=37.000&units=metric&APPID=e069f03cc6b6baabdbcd8a2c6d6ecfc1");
-            //dynamic data = Newtonsoft.Json.JsonConvert.DeserializeObject(openweathermap);
-            //TextBox1.Text = data.main.temp;
-            //Record("Main page is downloaded.");
-
-
 
             TableOperation retrieveOperation = TableOperation.Retrieve<LocationRecord>("Server №1", "Location");
             TableResult retrievedResult = table.Execute(retrieveOperation);
             string valueFromStorage;
-            string url1 = "https://static-maps.yandex.ru/1.x/?ll=";
-            string url2 = "&size=450,450&l=map&pt=";
-            string urlEndMap1 = ",comma&z=9";
+            string url1 = "https://static-maps.yandex.ru/1.x/?ll=";       // Yandex API
+            string url2 = "&size=450,450&l=map&pt=";                      // https://tech.yandex.ru/maps/
+			string urlEndMap1 = ",comma&z=9";
             string urlEndMap2 = ",comma&z=15";
             string urlMap;
 
@@ -62,8 +56,6 @@ namespace Laboratory
             TextBox1.Text = valueFromStorage;
 
 
-
-            //Image2.ImageUrl = "https://static-maps.yandex.ru/1.x/?ll=37.51667,56.35&size=450,450&l=map&pt=37.51667,56.35,comma&z=15";
         }
 
 
@@ -74,14 +66,10 @@ namespace Laboratory
             public LocationRecord(string input)
             {
                 this.input = input;
-                //this.time = time;
                 PartitionKey = "Server №1";                               // Ключ раздела
-                RowKey = "Location";
-                //RowKey = string.Format("{0}", input);                     // Ключ строки
+                RowKey = "Location";                                      // Ключ строки
             }
             public LocationRecord() { }
-
-            //public DateTime time { get; set; }
             public string input { get; set; }
         }
 
