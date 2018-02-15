@@ -1,2 +1,2 @@
 
-*.js linguist export-ignore
+*.js linguist linguist-documentation
