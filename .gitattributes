@@ -11,6 +11,18 @@
 # Note: This is only used by command line
 ###############################################################################
 #*.cs     diff=csharp
+#*.sln       diff=csharp
+#*.csproj    diff=csharp
+#*.vbproj    diff=csharp
+#*.vcxproj   diff=csharp
+#*.vcproj    diff=csharp
+#*.dbproj    diff=csharp
+#*.fsproj    diff=csharp
+#*.lsproj    diff=csharp
+#*.wixproj   diff=csharp
+#*.modelproj diff=csharp
+#*.sqlproj   diff=csharp
+#*.wwaproj   diff=csharp
 
 ###############################################################################
 # Set the merge driver for project and solution files
