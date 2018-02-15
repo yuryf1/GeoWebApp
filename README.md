@@ -1,4 +1,4 @@
-# GeoWebService
+# GeoWebApp
 https://movetome.azurewebsites.net/
 
 ASP.NET (with WebAPI and Azure Storage) Application that receives coordinates like https://movetome.azurewebsites.net/api/device/37.517699,56.348232 and displays a map.
