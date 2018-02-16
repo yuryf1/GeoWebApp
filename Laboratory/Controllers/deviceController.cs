@@ -11,12 +11,6 @@ namespace Laboratory.Controllers
 {
     public class deviceController : ApiController
     {
-        //Location[] location = new Location[]
-        //    {
-        //    new Location { Id = 1, Name = "Tomato Soup" },
-        //    new Location { Id = 2, Name = "Yo-yo"},
-        //    new Location { Id = 3, Name = "Hammer" }
-        //    };
 
         // GET: api/device
         public IEnumerable<string> Get()
