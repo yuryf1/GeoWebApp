@@ -14,7 +14,7 @@ namespace Laboratory
 {
     public partial class _Default : Page
     {
-        static string connectionString = "DefaultEndpointsProtocol=https;AccountName=movetome;AccountKey=l97rSV/ZQ8ATQrDgDGvAANDYrsxXXZqxV7KJdf0qNDRQT6l8NCyC8w/MgQN1/u2DoUr9qlEpaefQJOW4wYPExg==;EndpointSuffix=core.windows.net";
+        static string connectionString = "DefaultEndpointsProtocol=https;AccountName=movetome;AccountKey=l97jSV/ZQ8ATTrDgDGvAANDYrseXXZqxV7KJdf0qNDRQT6l8NCyC8w/MgQN1/u2DoUr9qlEpaefQJOW4wYPExg==;EndpointSuffix=core.windows.net";
         static CloudStorageAccount storageAccount { get; set; }
         static CloudTableClient t_client { get; set; }
         public static CloudTable table;
